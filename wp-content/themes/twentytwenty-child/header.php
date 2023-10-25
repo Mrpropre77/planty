@@ -113,7 +113,7 @@
 
 								}
 								?>
-
+								<li id="commander"><a href="http://localhost:8888/planty/commander">Commander</a></li>
 								</ul>
 
 							</nav><!-- .primary-menu-wrapper -->

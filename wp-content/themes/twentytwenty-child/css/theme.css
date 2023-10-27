@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
-   font-family: Syne;
+   font-family: 'Syne';
    max-width: 1440px;
    margin: auto;
+}
+@media (min-width:320px){
 }
 
 /* HEADER */
@@ -27,8 +29,8 @@ img.custom-logo {
 
 .primary-menu {
    position: relative;
-   top: -30px;
-   left: 400px;
+   top: -28px;
+   left: 432px;
 }
 
 li.menu-item {
@@ -52,6 +54,8 @@ li.menu-item a:hover {
    height: 80px;
    background: #DC9F96;
 }
+@media (min-width:320px){
+}
 
 #commander a {
    color: white;
@@ -69,9 +73,55 @@ li.menu-item a:hover {
    text-decoration: none;
 }
 
-/* MAIN */
+.primary-menu li.current-menu-item > a, .primary-menu li.current-menu-item > .link-icon-wrapper > a {
+   text-decoration: none;
+}
+
+/* MAIN avec elementor*/
 
 
+
+/* Accueil */
+
+.home {
+   height: 930px;
+   border-bottom-left-radius: 50% 50px;
+   border-bottom-right-radius: 50% 50px;
+   align-items: stretch;
+   background-color: #ECE2DA;
+}
+
+.home1 {
+   height: 415px;
+}
+
+.home2 {
+   height: 638px;
+}
+
+/* Nous rencontrer */
+
+.nr {
+   width: 1440px;
+   height: 1854px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   background-color: #ECE2DA;
+}
+
+.nr1 {
+   margin-top: 350px;
+}
+
+/* Commander */
+
+.c1 {
+   width: 1440px;
+   height: 1232px;
+   background-color: #3B8E46;
+   margin: auto;
+}
 
 /* FOOTER */
 

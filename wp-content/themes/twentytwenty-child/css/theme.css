@@ -20,7 +20,7 @@ body {
 img.custom-logo {
    width: 201px;
    position: relative;
-   top: -30px;
+   top: -40px;
    left: 0px;
 }
 
@@ -29,16 +29,25 @@ img.custom-logo {
 }
 
 .primary-menu {
+   display: flex;
+   flex-direction: row;
    position: relative;
    top: -28px;
    left: 40px;
 }
 
 li.menu-item {
-   display: flex;
    margin-left: 70px;
    padding-right: 60px;
-   margin-top: 33px;
+   margin-top: 37px;
+}
+
+li.menu-item a {
+   color: #000;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
 }
 
 li.menu-item a:hover {
@@ -49,31 +58,34 @@ li.menu-item a:hover {
    text-decoration: none;
 }
 
-#commander {
-   display: flex;
+.commander {
+   order: 3;
+   position: relative;
+   top: -29px;
    width: 236px;
    flex-shrink: 0;
    height: 80px;
    background: #DC9F96;
 }
-@media (min-width:320px){
+
+.commander a {
+   padding-left: 60px;
+   padding-top: 28px;
 }
 
-#commander a {
+#menu-item-1474 a {
    color: white;
    font-size: 16px;
    font-style: normal;
    font-weight: 700;
    line-height: normal;
-   padding-left: 61px;
-   padding-top: 27px;
 }
 
-#commander:hover {
+.commander:hover {
    background-color: #C02E44;
 }
 
-#commander a:hover {
+.commander a:hover {
    text-decoration: none;
 }
 
@@ -222,7 +234,7 @@ h2 {
    font-style: normal;
    font-weight: 700 !important;
    line-height: normal;
-   text-transform: capitalize;
+   text-transform: none;
 }
 
 .text21 {

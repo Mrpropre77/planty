@@ -85,7 +85,7 @@
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 
-							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty-child' ); ?>">
 
 								<ul class="primary-menu reset-list-style">
 
@@ -112,8 +112,7 @@
 									);
 
 								}
-								?>
-								<li id="commander"><a href="http://localhost:8888/planty/commander">Commander</a></li>
+								?>	
 								</ul>
 
 							</nav><!-- .primary-menu-wrapper -->

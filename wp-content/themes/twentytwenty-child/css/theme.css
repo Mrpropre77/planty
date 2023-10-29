@@ -4,9 +4,8 @@
 body {
    font-family: 'syne'!important;
    max-width: 1440px;
+   min-width: 320px;
    margin: auto;
-}
-@media (min-width:320px){
 }
 
 /* HEADER */
@@ -19,9 +18,18 @@ body {
 
 img.custom-logo {
    width: 201px;
-   position: relative;
-   top: -40px;
-   left: 0px;
+}
+
+.site-logo a, .site-logo img {
+   display: flex;
+   padding-bottom: 42px;
+   align-content: center;
+}
+
+@media (max-width: 320px) {
+   img.custom-logo {
+      width: 150px;
+   }
 }
 
 #site-header a {
@@ -49,6 +57,16 @@ li.menu-item a {
    font-weight: 400;
    line-height: normal;
 }
+@media (max-width: 768px) {
+   li.menu-item a {
+   color: #000;
+   font-size: 13px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   text-decoration: none;
+   }
+}
 
 li.menu-item a:hover {
    font-size: 13px;
@@ -56,6 +74,16 @@ li.menu-item a:hover {
    font-weight: 700;
    line-height: normal;
    text-decoration: none;
+}
+@media (max-width: 768px) {
+   li.menu-item a:hover {
+   color: #000;
+   font-size: 13px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   text-decoration: none;
+   }
 }
 
 .commander {
@@ -67,10 +95,20 @@ li.menu-item a:hover {
    height: 80px;
    background: #DC9F96;
 }
+@media (max-width: 768px) {
+   .commander {
+      background: none;
+   }
+}
 
 .commander a {
    padding-left: 60px;
    padding-top: 28px;
+}
+@media (max-width: 768px) {
+   .commander a {
+      padding-left: none;
+   }
 }
 
 #menu-item-1474 a {
@@ -84,6 +122,11 @@ li.menu-item a:hover {
 .commander:hover {
    background-color: #C02E44;
 }
+@media (max-width: 768px) {
+   .commander:hover {
+      background: none;
+   }
+}
 
 .commander a:hover {
    text-decoration: none;
@@ -91,6 +134,11 @@ li.menu-item a:hover {
 
 .primary-menu li.current-menu-item > a, .primary-menu li.current-menu-item > .link-icon-wrapper > a {
    text-decoration: none;
+}
+
+.modal-menu > li > a, .modal-menu > li > .ancestor-wrapper > a {
+   font-size: 15px;
+   font-weight: 700;
 }
 
 /* MAIN avec elementor*/
